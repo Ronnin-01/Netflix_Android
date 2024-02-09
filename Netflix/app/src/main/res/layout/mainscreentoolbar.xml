@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        android:theme="@style/Theme.AppCompat.Light.Dialog"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/netflixlogo"
+                android:layout_width="125dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_netflix_icon_text">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/tvseriestooltext"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/netflixlogo"
+                android:text="TvSeries"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/movietooltext"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/netflixlogo"
+                android:text="Movies"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+</merge>

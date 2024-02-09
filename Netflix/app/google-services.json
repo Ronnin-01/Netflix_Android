@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "505649697200",
+    "project_id": "netflx-42a6a",
+    "storage_bucket": "netflx-42a6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505649697200:android:6fda7293ba409ebd550675",
+        "android_client_info": {
+          "package_name": "com.application.netflix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyaJKQxQd6lDto2QefpYjFa2Ez5qy8_LU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505649697200:android:49f34d4ecf2bb887550675",
+        "android_client_info": {
+          "package_name": "com.application.netflx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyaJKQxQd6lDto2QefpYjFa2Ez5qy8_LU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

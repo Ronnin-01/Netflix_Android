@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StepThree">
+    <include layout="@layout/tool_stepthree">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="784dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteY="60dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="12dp">
+
+            <include layout="@layout/locicon" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/step3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="STEP 3 OF 3"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="13dp"
+            android:text="Set Up Your Payment"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="13dp"
+            android:text="Your Membership starts as soon as you set up payment."
+            android:textSize="20sp"
+            android:textColor="@color/inactivedots"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="No Commitments.\n Cancel online any time."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:id="@+id/paymentlinearlyt"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="80dp"
+            android:paddingStart="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/button_stroke">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Credit Or Debit Card"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="2dp"/>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/visacard"/>
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="2dp"/>
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mastercard"/>
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="2dp"/>
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/americanexpress"/>
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="2dp"/>
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/lastcard"/>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

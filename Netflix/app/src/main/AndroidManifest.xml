@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Netflix"
+        tools:targetApi="31"
+        tools:ignore="ExtraText">
+        <activity
+            android:name=".Mainscreens.MovieDetails"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Mainscreens.VideoPlayer"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".Mainscreens.Search"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Mainscreens.Settings"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Mainscreens.Series"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Mainscreens.Movies"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PaymentOverDue"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PaymentGateway"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <meta-data
+                android:name="com.razorpay.Apikey"
+                android:value="rzp_test_0kWIM2FX8rtcgf" />
+        </activity>
+        <activity
+            android:name=".Activities.StepThree"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StepTwo"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FinishUpAccount"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ChooseYourPlan"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StepOne"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Mainscreens.MainScreen"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SwipeScreen"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SignIn"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.Apikey"
+            android:value="rzp_test_0kWIM2FX8rtcgf" />
+    </application>
+
+</manifest>
